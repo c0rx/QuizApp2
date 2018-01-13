@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <string name="quiz1">1. What are first two things you should  do if you see car accident, passenger leaves the car and suddenly falls to the ground, lying stiffly on their back for a few seconds, before beginning to jerk their arms and legs violently?</string>
+    <string name="quiz2">2. You see a middle-aged man suddenly become distressed. He appears to be choking and points to his throat. He cannot speak and is becoming bluish in colour. What should you do?</string>
+    <string name="quiz3">3. The common European emergency number is?</string>
+    <string name="quiz4">4. Your partner accidentally places their hand on a hot stove top and burns themselves? What\'s the best thing to do?</string>
+    <string name="quiz5">5. If available, what should you always try and wear when treating wounds and bleeding?</string>
+    <string name="q1_1">Put something between their teeth to stop them from biting their tongue</string>
+    <string name="q1_2">Remove any objects they may hurt themselves on and roll them on to their side</string>
+    <string name="q1_3">Restrain their thrashing arms and limbs by holding them down on their back</string>
+    <string name="q1_4">Make sure you are safe first</string>
+    <string name="q2_1">Reassure him and offer him a glass of water</string>
+    <string name="q2_2">Stand behind him, wrap your arms around his upper abdomen and with one hand wrapped around the other, pull back strongly and sharply</string>
+    <string name="q2_3">Begin mouth-to-mouth resuscitation</string>
+    <string name="q2_4">Ask him to bend forward and give him a series of hard thumps to his upper back</string>
+    <string name="q4_1">Rub butter onto the burned area</string>
+    <string name="q4_2">Hold the hand under cold running water for up to 20 minutes</string>
+    <string name="q4_3">Immerse the hand in a bucket of iced water</string>
+    <string name="q4_4">Cover with antiseptic cream and a cloth bandage</string>
+    <string name="q5_1">Nothing at all</string>
+    <string name="q5_2">A hat</string>
+    <string name="q5_3">Gloves</string>
+    <string name="q5_4">A mask</string>
+    <string name="restart">RESTART QUIZ</string>
+    <string name="hint">Enter your name</string>
+    <string name="proceed">Proceed</string>
+    <string name="result">%1$s, you scored %2$d out of 5 points!</string>
+    <string name="correct">Correct!</string>
+    <string name="wrong">Wrong!</string>
+    <string name="no_answer">Select an answer!</string>
+    <string name="no_name">Field name cannot be empty!</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" >
+
+
+
+        <ImageView
+            android:id="@+id/top"
+            android:src="@drawable/first_aid"
+            style="@style/image_top" />
+
+
+        <ImageView
+            android:id="@+id/first_aid"
+            android:src="@drawable/quiz3"
+            style="@style/image" />
+
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/quiz1"
+        android:text="@string/quiz3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/first_aid"
+        android:layout_margin="12dp"/>
+
+    <EditText android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/quiz1"/>
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:text="@string/proceed"
+            android:onClick="submitAnswer"
+            style="@style/button3"/>
+
+
+
+</RelativeLayout>
+</ScrollView>

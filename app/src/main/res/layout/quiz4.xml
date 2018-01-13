@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" >
+
+
+        <ImageView
+            android:id="@+id/top"
+            android:src="@drawable/first_aid"
+            style="@style/image_top" />
+
+
+        <ImageView
+            android:id="@+id/first_aid"
+            android:src="@drawable/quiz4"
+            style="@style/image" />
+
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/quiz1"
+        android:text="@string/quiz4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/first_aid"
+        android:layout_margin="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz1">
+
+        <RadioButton android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_1"
+            />
+
+        <RadioButton android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_2"
+            />
+
+        <RadioButton android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_3"
+            />
+
+        <RadioButton android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_4"
+            />
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:text="@string/proceed"
+            android:onClick="submitAnswer"
+            style="@style/button2" />
+
+
+
+
+</RelativeLayout>
+</ScrollView>
