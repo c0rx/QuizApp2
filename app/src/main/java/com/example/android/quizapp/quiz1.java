@@ -14,8 +14,10 @@ public class quiz1 extends Activity implements View.OnClickListener {
 
     int points;
     String name;
-
-
+    CheckBox checkbox;
+    CheckBox checkbox2;
+    CheckBox checkbox3;
+    CheckBox checkbox4;
     private ArrayList<CheckBox> mChecks;
     private ArrayList<CheckBox> mSelectedChecks;
 
@@ -35,10 +37,10 @@ public class quiz1 extends Activity implements View.OnClickListener {
         mChecks = new ArrayList<>();
         mSelectedChecks = new ArrayList<>();
 
-        CheckBox checkbox = findViewById(R.id.checkbox1);
-        CheckBox checkbox2 = findViewById(R.id.checkbox2);
-        CheckBox checkbox3 = findViewById(R.id.checkbox3);
-        CheckBox checkbox4 = findViewById(R.id.checkbox4);
+        checkbox = findViewById(R.id.checkbox1);
+        checkbox2 = findViewById(R.id.checkbox2);
+        checkbox3 = findViewById(R.id.checkbox3);
+        checkbox4 = findViewById(R.id.checkbox4);
 
         mChecks.add(checkbox);
         mChecks.add(checkbox2);
@@ -87,13 +89,10 @@ public class quiz1 extends Activity implements View.OnClickListener {
 
     public void submitAnswer(View view) {
 
-        CheckBox checkbox = (CheckBox) findViewById(R.id.checkbox1);
+
         boolean checked = checkbox.isChecked();
-        CheckBox checkbox2 = (CheckBox) findViewById(R.id.checkbox2);
         boolean checked2 = checkbox2.isChecked();
-        CheckBox checkbox3 = (CheckBox) findViewById(R.id.checkbox3);
         boolean checked3 = checkbox3.isChecked();
-        CheckBox checkbox4 = (CheckBox) findViewById(R.id.checkbox4);
         boolean checked4 = checkbox4.isChecked();
 
         if (checked2 && checked4) {

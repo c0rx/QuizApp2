@@ -13,6 +13,10 @@ public class quiz2 extends Activity {
 
     int points;
     String name;
+    RadioButton radio1;
+    RadioButton radio2;
+    RadioButton radio3;
+    RadioButton radio4;
 
 
     /**
@@ -35,13 +39,13 @@ public class quiz2 extends Activity {
 
     public void submitAnswer(View view) {
 
-        RadioButton radio1 = findViewById(R.id.radio1);
+        radio1 = findViewById(R.id.radio1);
         boolean checked1 = radio1.isChecked();
-        RadioButton radio2 = findViewById(R.id.radio2);
+        radio2 = findViewById(R.id.radio2);
         boolean checked2 = radio2.isChecked();
-        RadioButton radio3 = findViewById(R.id.radio3);
+        radio3 = findViewById(R.id.radio3);
         boolean checked3 = radio3.isChecked();
-        RadioButton radio4 = findViewById(R.id.radio4);
+        radio4 = findViewById(R.id.radio4);
         boolean checked4 = radio4.isChecked();
 
         if (checked4) {
