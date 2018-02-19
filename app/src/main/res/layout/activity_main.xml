@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.example.android.quizapp.MainActivity"
-    android:fillViewport="true"  >
+    android:fillViewport="true"
+    tools:context="com.example.android.quizapp.MainActivity">
 
     <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
 
         <ImageView
             android:id="@+id/image"
-            android:src="@drawable/first_aid"
-            style="@style/image_main" />
+            style="@style/image_main"
+            android:src="@drawable/first_aid"/>
 
         <EditText
             android:id="@+id/name"
-            android:hint="@string/hint"
-            style="@style/edit_text_field" />
+            style="@style/edit_text_field"
+            android:hint="@string/hint"/>
 
         <Button
             android:id="@+id/proceed"
-            android:text="@string/proceed"
-            style="@style/button" />
+            style="@style/button"
+            android:text="@string/proceed"/>
 
     </RelativeLayout>
 </ScrollView>

@@ -7,13 +7,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
-public class quiz3 extends Activity {
-
+public class Quiz3 extends Activity {
 
     int points;
     String name;
-
 
     /**
      * Called when the activity is first created.
@@ -59,7 +56,7 @@ public class quiz3 extends Activity {
     public void nextPage(View view) {
 
         //Starting a new Intent
-        Intent nextScreen = new Intent(this, quiz4.class);
+        Intent nextScreen = new Intent(this, Quiz4.class);
         nextScreen.putExtra("points", points);
         nextScreen.putExtra("name", name);
         startActivity(nextScreen);

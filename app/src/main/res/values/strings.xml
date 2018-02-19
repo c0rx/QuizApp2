@@ -26,6 +26,7 @@
     <string name="hint">Enter your name</string>
     <string name="proceed">Proceed</string>
     <string name="result">%1$s, you scored %2$d out of 5 points!</string>
+    <string name="result2">%1$s, you scored %2$d out of 5 points!</string>
     <string name="correct">Correct!</string>
     <string name="wrong">Wrong!</string>
     <string name="no_answer">Select an answer!</string>

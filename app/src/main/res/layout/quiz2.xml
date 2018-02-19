@@ -1,82 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.quizapp.MainActivity"
     android:fillViewport="true"
-    >
+    tools:context="com.example.android.quizapp.Quiz2">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp" >
-
-
+        android:layout_margin="16dp">
 
         <ImageView
             android:id="@+id/top"
-            android:src="@drawable/first_aid"
-            style="@style/image_top" />
-
+            style="@style/image_top"
+            android:src="@drawable/first_aid"/>
 
         <ImageView
             android:id="@+id/first_aid"
-            android:src="@drawable/quiz2"
-            style="@style/image" />
+            style="@style/image"
+            android:src="@drawable/quiz2"/>
 
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/quiz1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_aid"
+            android:layout_margin="12dp"
+            android:text="@string/quiz2"
+            android:textSize="16sp" />
 
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quiz1">
 
-    <com.codesgood.views.JustifiedTextView
-        android:id="@+id/quiz1"
-        android:text="@string/quiz2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:layout_below="@+id/first_aid"
-        android:layout_margin="12dp"/>
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_1" />
 
-    <RadioGroup
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/quiz1">
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_2" />
 
-    <RadioButton android:id="@+id/radio1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/q2_1"
-        />
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_3" />
 
-    <RadioButton android:id="@+id/radio2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/q2_2"
-        />
-
-    <RadioButton android:id="@+id/radio3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/q2_3"
-        />
-
-    <RadioButton android:id="@+id/radio4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/q2_4"
-        />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_4" />
+        </RadioGroup>
 
         <Button
             android:id="@+id/button"
-            android:text="@string/proceed"
+            style="@style/button2"
             android:onClick="submitAnswer"
-            style="@style/button2" />
+            android:text="@string/proceed" />
 
-
-
-
-</RelativeLayout>
+    </RelativeLayout>
 </ScrollView>

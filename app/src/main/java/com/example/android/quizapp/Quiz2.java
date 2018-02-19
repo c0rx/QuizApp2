@@ -7,9 +7,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-
-public class quiz2 extends Activity {
-
+public class Quiz2 extends Activity {
 
     int points;
     String name;
@@ -17,7 +15,6 @@ public class quiz2 extends Activity {
     RadioButton radio2;
     RadioButton radio3;
     RadioButton radio4;
-
 
     /**
      * Called when the activity is first created.
@@ -67,11 +64,10 @@ public class quiz2 extends Activity {
      *  Intent for next Activity, pass there points and name
      */
 
-
     public void nextPage(View view) {
 
         //Starting a new Intent
-        Intent nextScreen = new Intent(this, quiz3.class);
+        Intent nextScreen = new Intent(this, Quiz3.class);
         nextScreen.putExtra("points", points);
         nextScreen.putExtra("name", name);
         startActivity(nextScreen);

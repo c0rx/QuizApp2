@@ -9,18 +9,16 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-
-public class quiz1 extends Activity implements View.OnClickListener {
+public class Quiz1 extends Activity implements View.OnClickListener {
 
     int points;
     String name;
-    CheckBox checkbox;
-    CheckBox checkbox2;
-    CheckBox checkbox3;
-    CheckBox checkbox4;
+    CheckBox checkBox;
+    CheckBox checkBox2;
+    CheckBox checkBox3;
+    CheckBox checkBox4;
     private ArrayList<CheckBox> mChecks;
     private ArrayList<CheckBox> mSelectedChecks;
-
 
     /**
      * Called when the activity is first created.
@@ -37,15 +35,15 @@ public class quiz1 extends Activity implements View.OnClickListener {
         mChecks = new ArrayList<>();
         mSelectedChecks = new ArrayList<>();
 
-        checkbox = findViewById(R.id.checkbox1);
-        checkbox2 = findViewById(R.id.checkbox2);
-        checkbox3 = findViewById(R.id.checkbox3);
-        checkbox4 = findViewById(R.id.checkbox4);
+        checkBox = findViewById(R.id.checkbox1);
+        checkBox2 = findViewById(R.id.checkbox2);
+        checkBox3 = findViewById(R.id.checkbox3);
+        checkBox4 = findViewById(R.id.checkbox4);
 
-        mChecks.add(checkbox);
-        mChecks.add(checkbox2);
-        mChecks.add(checkbox3);
-        mChecks.add(checkbox4);
+        mChecks.add(checkBox);
+        mChecks.add(checkBox2);
+        mChecks.add(checkBox3);
+        mChecks.add(checkBox4);
 
         for (CheckBox c : mChecks) {
             c.setOnClickListener(this);
@@ -55,7 +53,6 @@ public class quiz1 extends Activity implements View.OnClickListener {
     /**
      *  Only two checkboxes at the same time
      */
-
 
     @Override
     public void onClick(View view) {
@@ -89,11 +86,10 @@ public class quiz1 extends Activity implements View.OnClickListener {
 
     public void submitAnswer(View view) {
 
-
-        boolean checked = checkbox.isChecked();
-        boolean checked2 = checkbox2.isChecked();
-        boolean checked3 = checkbox3.isChecked();
-        boolean checked4 = checkbox4.isChecked();
+        boolean checked = checkBox.isChecked();
+        boolean checked2 = checkBox2.isChecked();
+        boolean checked3 = checkBox3.isChecked();
+        boolean checked4 = checkBox4.isChecked();
 
         if (checked2 && checked4) {
             points += 1;
@@ -118,12 +114,11 @@ public class quiz1 extends Activity implements View.OnClickListener {
 
     public void nextPage(View view) {
 
-        Intent nextScreen = new Intent(this, quiz2.class);
+        Intent nextScreen = new Intent(this, Quiz2.class);
         nextScreen.putExtra("points", points);
         nextScreen.putExtra("name", name);
         startActivity(nextScreen);
     }
-
 
 }
 

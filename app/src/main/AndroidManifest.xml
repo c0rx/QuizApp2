@@ -17,12 +17,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".quiz1"></activity>
-        <activity android:name=".quiz2"></activity>
-        <activity android:name=".quiz3"></activity>
-        <activity android:name=".quiz4"></activity>
-        <activity android:name=".quiz5"></activity>
-        <activity android:name=".results"></activity>
+        <activity android:name=".Quiz1"></activity>
+        <activity android:name=".Quiz2"></activity>
+        <activity android:name=".Quiz3"></activity>
+        <activity android:name=".Quiz4"></activity>
+        <activity android:name=".Quiz5"></activity>
+        <activity android:name=".Results"></activity>
     </application>
 
 </manifest>

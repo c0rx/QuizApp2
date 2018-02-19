@@ -7,9 +7,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-
-public class quiz5 extends Activity {
-
+public class Quiz4 extends Activity {
 
     int points;
     String name;
@@ -18,14 +16,13 @@ public class quiz5 extends Activity {
     RadioButton radio3;
     RadioButton radio4;
 
-
     /**
      * Called when the activity is first created.
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz5);
+        setContentView(R.layout.quiz4);
 
         Intent nextScreen = getIntent();
         points = nextScreen.getIntExtra("points", 0);
@@ -48,16 +45,14 @@ public class quiz5 extends Activity {
         radio4 = findViewById(R.id.radio4);
         boolean checked4 = radio4.isChecked();
 
-        if (checked3) {
+        if (checked2) {
             points += 1;
             Toast.makeText(getApplicationContext(), getString(R.string.correct), Toast.LENGTH_SHORT).show();
             nextPage(view);
 
-        }
+        } else if (!checked1 && !checked2 && !checked3 && !checked4) {
 
-            else if (!checked1 && !checked2 && !checked3 && !checked4) {
-
-                Toast.makeText(getApplicationContext(), getString(R.string.no_answer), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.no_answer), Toast.LENGTH_SHORT).show();
 
         } else
 
@@ -74,12 +69,10 @@ public class quiz5 extends Activity {
     public void nextPage(View view) {
 
         //Starting a new Intent
-        Intent nextScreen = new Intent(this, results.class);
+        Intent nextScreen = new Intent(this, Quiz5.class);
         nextScreen.putExtra("points", points);
         nextScreen.putExtra("name", name);
         startActivity(nextScreen);
     }
 
 }
-
-

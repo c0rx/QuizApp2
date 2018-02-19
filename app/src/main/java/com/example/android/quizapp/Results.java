@@ -6,13 +6,12 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class results extends Activity {
-
+public class Results extends Activity {
 
     int points;
     String name;
-
 
     /**
      * Called when the activity is first created.
@@ -29,8 +28,11 @@ public class results extends Activity {
 
         Resources res = getResources();
         String text = res.getString(R.string.result, name, points);
+
         TextView resultTextView = findViewById(R.id.result);
         resultTextView.setText(text);
+
+        Toast.makeText(getApplicationContext(), getString(R.string.result, name, points), Toast.LENGTH_LONG).show();
 
     }
 

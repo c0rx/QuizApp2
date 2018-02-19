@@ -7,8 +7,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-
-public class quiz4 extends Activity {
+public class Quiz5 extends Activity {
 
     int points;
     String name;
@@ -23,7 +22,7 @@ public class quiz4 extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz4);
+        setContentView(R.layout.quiz5);
 
         Intent nextScreen = getIntent();
         points = nextScreen.getIntExtra("points", 0);
@@ -46,7 +45,7 @@ public class quiz4 extends Activity {
         radio4 = findViewById(R.id.radio4);
         boolean checked4 = radio4.isChecked();
 
-        if (checked2) {
+        if (checked3) {
             points += 1;
             Toast.makeText(getApplicationContext(), getString(R.string.correct), Toast.LENGTH_SHORT).show();
             nextPage(view);
@@ -70,10 +69,12 @@ public class quiz4 extends Activity {
     public void nextPage(View view) {
 
         //Starting a new Intent
-        Intent nextScreen = new Intent(this, quiz5.class);
+        Intent nextScreen = new Intent(this, Results.class);
         nextScreen.putExtra("points", points);
         nextScreen.putExtra("name", name);
         startActivity(nextScreen);
     }
 
 }
+
+

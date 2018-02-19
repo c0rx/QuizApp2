@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
     EditText inputName;
     String name;
 
@@ -19,10 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         Button btnNextScreen = findViewById(R.id.proceed);
             btnNextScreen.setOnClickListener(new View.OnClickListener() {
-
 
                 public void onClick(View arg0) {
 
@@ -31,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (!name.isEmpty()) {
 
-                        Intent nextScreen = new Intent(getApplicationContext(), quiz1.class);
+                        Intent nextScreen = new Intent(getApplicationContext(), Quiz1.class);
                         nextScreen.putExtra("name", name);
                         startActivity(nextScreen);
 
@@ -44,9 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
             });
         }
-
-
-
 
     }
 
