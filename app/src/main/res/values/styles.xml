@@ -14,8 +14,6 @@
         <item name="android:layout_below">@+id/name</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:layout_marginBottom">24dp</item>
-        <item name="android:background">#E00000</item>
-        <item name="android:textColor">#FFFF</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -25,8 +23,6 @@
     <item name="android:layout_below">@+id/checkbox4</item>
     <item name="android:layout_marginTop">24dp</item>
     <item name="android:layout_marginBottom">24dp</item>
-    <item name="android:background">#E00000</item>
-    <item name="android:textColor">#FFFF</item>
     <item name="android:textStyle">bold</item>
 </style>
 
@@ -36,8 +32,6 @@
         <item name="android:layout_below">@+id/group</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:layout_marginBottom">24dp</item>
-        <item name="android:background">#E00000</item>
-        <item name="android:textColor">#FFFF</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -47,8 +41,6 @@
         <item name="android:layout_below">@+id/edit_text</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:layout_marginBottom">24dp</item>
-        <item name="android:background">#E00000</item>
-        <item name="android:textColor">#FFFF</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -58,8 +50,6 @@
         <item name="android:layout_below">@+id/result</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:layout_marginBottom">24dp</item>
-        <item name="android:background">#E00000</item>
-        <item name="android:textColor">#FFFF</item>
         <item name="android:textStyle">bold</item>
     </style>
 

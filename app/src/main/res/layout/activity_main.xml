@@ -25,6 +25,8 @@
         <Button
             android:id="@+id/proceed"
             style="@style/button"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
             android:text="@string/proceed"/>
 
     </RelativeLayout>

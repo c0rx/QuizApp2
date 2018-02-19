@@ -65,6 +65,8 @@
         <Button
             android:id="@+id/button"
             style="@style/button2"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
             android:onClick="submitAnswer"
             android:text="@string/proceed" />
 

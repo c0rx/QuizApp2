@@ -63,6 +63,8 @@
             android:id="@+id/button"
             style="@style/button1"
             android:onClick="submitAnswer"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
             android:text="@string/proceed"/>
 
     </RelativeLayout>

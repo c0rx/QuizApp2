@@ -31,6 +31,8 @@
         <Button
             android:id="@+id/button"
             android:text="@string/proceed"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
             android:onClick="submitAnswer"
             style="@style/button4"/>
 
